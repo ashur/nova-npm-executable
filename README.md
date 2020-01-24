@@ -1,0 +1,2 @@
+# nova-npm-executable
+
