@@ -1,6 +1,9 @@
 /** Class for managing external NPM module executables in Nova extensions */
 module.exports.NPMExecutable = class NPMExecutable
 {
+	/**
+	 * @param {string} binName - The name of the executable found in `node_modules/.bin`
+	 */
 	constructor( binName )
 	{
 		this.binName = binName;
@@ -8,7 +11,7 @@ module.exports.NPMExecutable = class NPMExecutable
 	}
 
 	/**
-	 * Install NPM dependencies inside the extension folder.
+	 * Install NPM dependencies inside the extension bundle.
 	 *
 	 * @return {Promise}
 	 */
