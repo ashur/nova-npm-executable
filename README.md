@@ -84,12 +84,12 @@ Whether the package has already been installed inside the extension bundle.
 
 ### process(options)
 
-- `{Object} processOptions`
-- `{[string]} [processOptions.args]`
-- `{string} [processOptions.cwd]`
-- `{Object} [processOptions.env]`
-- `{string|boolean} [processOptions.shell]`
-- `{[string]} [processOptions.stdio]`
+- `{Object} options`
+- `{[string]} [options.args]`
+- `{string} [options.cwd]`
+- `{Object} [options.env]`
+- `{string|boolean} [options.shell]`
+- `{[string]} [options.stdio]`
 
 Helper function for instantiating `Process` object with options needed to run the module executable using `npx`.
 
