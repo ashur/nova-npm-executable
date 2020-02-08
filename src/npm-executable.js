@@ -85,7 +85,15 @@ module.exports.NPMExecutable = class NPMExecutable
 
 		if( this.PATH === null )
 		{
-			this.PATH = await getEnv( "PATH" );
+			// Environment.environment added in 1.0b8
+			if( nova.environment && nova.environment.PATH )
+			{
+				this.PATH = nova.environment.PATH;
+			}
+			else
+			{
+				this.PATH = await getEnv( "PATH" );
+			}
 		}
 
 		/* The current workspace path (if any) and the extension's path are
