@@ -13,6 +13,9 @@ module.exports = {
 		"ecmaVersion": 2018
 	},
 	"rules": {
+		"no-console": "error",
+		"no-template-curly-in-string": "error",
+		"require-await": "error",
 	},
 	"plugins": [
 		"nova",
