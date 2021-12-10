@@ -9,6 +9,10 @@
   "keywords": [],
   "author": "Ashur Cabrera",
   "license": "ISC",
+  "repository": {
+	"type": "git",
+	"url": "https://github.com/ashur/nova-npm-executable"
+  },
   "devDependencies": {
     "eslint": "^6.8.0",
     "eslint-plugin-nova": "^1.0.0-beta.3"
